@@ -1,0 +1,54 @@
+\usepackage{booktabs}
+\usepackage{svg}
+\usepackage{listings}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{fontawesome}
+\newenvironment{rcases}
+  {\left.\begin{aligned}}
+  {\end{aligned}\right\rbrace}
+\definecolor{lightgray}{rgb}{0.97, 0.97, 0.97}
+\usepackage[style=numeric,citestyle=ieee
+,backend=bibtex]{biblatex}
+
+    \newcommand{\red}[1]{{\color{red}{#1}}}
+    \newcommand{\blue}[1]{{\color{blue}{#1}}}
+
+    \lstset{
+        basicstyle=\ttfamily,
+        numbers=left,
+        keywordstyle=\color[rgb]{0.13,0.29,0.53}\bfseries,
+        stringstyle=\color[rgb]{0.31,0.60,0.02},
+        commentstyle=\color[rgb]{0.56,0.35,0.01}\itshape,
+        numberstyle=\footnotesize,
+        stepnumber=1,
+        numbersep=5pt,
+        backgroundcolor=\color[RGB]{248,248,248},
+        showspaces=false,
+        showstringspaces=false,
+        showtabs=false,
+        tabsize=2,
+        captionpos=b,
+        breaklines=true,
+        breakatwhitespace=true,
+        breakautoindent=true,
+        escapeinside={\%*}{*)},
+        linewidth=\textwidth,
+        basewidth=0.5em,
+    }
+
+% \newcommand{\red}[1]{{\color{red}{#1}}}
+\newcommand{\redline}[1]{{\color{red}{\ul{#1}}}}
+\newcommand{\redlineit}[1]{{\color{red}{\ul{\textit{#1}}}}}
+\newcommand{\redit}[1]{{\color{red}{\textit{#1}}}}
+\newcommand{\redbf}[1]{{\color{red}{\textbf{#1}}}}
+
+\newcommand{\underit}[1]{\ul{\textit{#1}}}
+
+\newcommand{\blueit}[1]{{\color{blue}{\textit{#1}}}}
+% \newcommand{\blue}[1]{{\color{blue}{#1}}}
+\newcommand{\blueline}[1]{{\color{blue}{\ul{#1}}}}
